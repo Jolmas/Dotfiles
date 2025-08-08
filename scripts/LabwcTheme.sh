@@ -48,6 +48,8 @@ menu(){
   printf "28. Win-7\n"
   printf "29. Chimera-Light\n"
   printf "30. Aqua-7\n"
+  printf "31. Aqua-Pills\n"
+  printf "32. Aqua-Dots\n"
 
 }
 
@@ -239,6 +241,18 @@ main() {
 	        ln -sf $THEMES/style-mauve.css "$HOME/.config/waybar/style.css"
     	    ln -sf $THEMES/style-mauve.css "$HOME/.config/waybar/style-default.css"
 			sed -i '' "s/$(grep "<theme>" ~/.config/labwc/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/Lab-Aqua7/g" ~/.config/labwc/rc.xml
+			restart
+            ;;
+        31)
+	        ln -sf $THEMES/style-light.css "$HOME/.config/waybar/style.css"
+    	    ln -sf $THEMES/style-light.css "$HOME/.config/waybar/style-default.css"
+			sed -i '' "s/$(grep "<theme>" ~/.config/labwc/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/Lab-Aqua-Pills/g" ~/.config/labwc/rc.xml
+			restart
+            ;;
+        32)
+	        ln -sf $THEMES/style-light.css "$HOME/.config/waybar/style.css"
+    	    ln -sf $THEMES/style-light.css "$HOME/.config/waybar/style-default.css"
+			sed -i '' "s/$(grep "<theme>" ~/.config/labwc/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/Lab-Aqua-Dots/g" ~/.config/labwc/rc.xml
 			restart
             ;;
         *)
