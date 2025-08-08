@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu>
+<menu id="root-menu" label="root-menu">
+    <item label="Terminal" icon="konsole">
+      <action name="Execute"><command>foot</command></action>
+    </item>
+	<item label="Dolphin" icon="org.kde.dolphin">
+      <action name="Execute"><command>dolphin</command></action>
+    </item>
+  <separator />
+  <menu id="Accessories" label="Accesorios" icon="applications-accessories">
+    <item label="Ark" icon="ark">
+      <action name="Execute"><command>ark</command></action>
+    </item>
+    <item label="BleachBit" icon="bleachbit">
+      <action name="Execute"><command>bleachbit</command></action>
+    </item>
+    <item label="bottom" icon="htop">
+      <action name="Execute"><command>foot 'btm'</command></action>
+    </item>
+    <item label="CopyQ" icon="copyq">
+      <action name="Execute"><command>copyq --start-server show</command></action>
+    </item>
+    <item label="Flatseal" icon="com.github.tchx84.Flatseal">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=com.github.tchx84.Flatseal com.github.tchx84.Flatseal</command></action>
+    </item>
+    <item label="Flatsweep" icon="io.github.giantpinkrobots.flatsweep">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=flatsweep io.github.giantpinkrobots.flatsweep</command></action>
+    </item>
+    <item label="FSearch" icon="io.github.cboxdoerfer.FSearch">
+      <action name="Execute"><command>fsearch</command></action>
+    </item>
+    <item label="Impresión" icon="io.gitlab.adhami3310.Impression">
+      <action name="Execute"><command>impression</command></action>
+    </item>
+    <item label="Kate" icon="kate">
+      <action name="Execute"><command>kate -b</command></action>
+    </item>
+    <item label="KCharSelect" icon="accessories-character-map">
+      <action name="Execute"><command>kcharselect --qwindowtitle</command></action>
+    </item>
+    <item label="Packet" icon="io.github.nozwock.Packet">
+      <action name="Execute"><command>packet</command></action>
+    </item>
+    <item label="PeaZip" icon="io.github.peazip.PeaZip">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=peazip --file-forwarding io.github.peazip.PeaZip @@  @@</command></action>
+    </item>
+    <item label="Qalculate! (Qt)" icon="qalculate-qt">
+      <action name="Execute"><command>qalculate-qt</command></action>
+    </item>
+    <item label="scrcpy" icon="scrcpy">
+      <action name="Execute"><command>/bin/sh -c "\$SHELL -i -c scrcpy"</command></action>
+    </item>
+    <item label="scrcpy (console)" icon="scrcpy">
+      <action name="Execute"><command>foot '/bin/sh -c "\$SHELL -i -c 'scrcpy --pause-on-exit=if-error'"'</command></action>
+    </item>
+    <item label="Selector de emojis" icon="preferences-desktop-emoticons">
+      <action name="Execute"><command>plasma-emojier</command></action>
+    </item>
+    <item label="Spectacle" icon="spectacle">
+      <action name="Execute"><command>/usr/bin/spectacle</command></action>
+    </item>
+    <item label="Sweeper" icon="sweeper">
+      <action name="Execute"><command>sweeper</command></action>
+    </item>
+    <item label="Yazi" icon="yazi">
+      <action name="Execute"><command>foot 'yazi'</command></action>
+    </item>
+    <item label="YTMDesktop" icon="app.ytmdesktop.ytmdesktop">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=start-ytmdesktop --file-forwarding app.ytmdesktop.ytmdesktop @@u  @@</command></action>
+    </item>
+  </menu> <!-- Accessories -->
+  <menu id="Settings" label="Configuración" icon="preferences-desktop">
+    <item label="Ajustes de KDE Connect" icon="kdeconnect">
+      <action name="Execute"><command>kdeconnect-settings</command></action>
+    </item>
+    <item label="Configuración de red avanzada" icon="preferences-system-network">
+      <action name="Execute"><command>nm-connection-editor</command></action>
+    </item>
+    <item label="Control de volumen" icon="multimedia-volume-control">
+      <action name="Execute"><command>pavucontrol</command></action>
+    </item>
+    <item label="Labwc Config" icon="labwc-tweaks-gtk">
+      <action name="Execute"><command>labwc-tweaks-gtk</command></action>
+    </item>
+    <item label="Labwc Tweaks" icon="labwc_tweaks">
+      <action name="Execute"><command>labwc-tweaks</command></action>
+    </item>
+    <item label="Preferencias del sistema" icon="preferences-system">
+      <action name="Execute"><command>systemsettings</command></action>
+    </item>
+    <item label="Preferencias del sistema de KDE" icon="preferences-system">
+      <action name="Execute"><command>systemsettings</command></action>
+    </item>
+  </menu> <!-- Settings -->
+  <menu id="Development" label="Desarrollo" icon="applications-development">
+    <item label="Kate" icon="kate">
+      <action name="Execute"><command>kate -b</command></action>
+    </item>
+  </menu> <!-- Development -->
+  <menu id="Education" label="Educación" icon="applications-science">
+    <item label="Qalculate! (Qt)" icon="qalculate-qt">
+      <action name="Execute"><command>qalculate-qt</command></action>
+    </item>
+  </menu> <!-- Education -->
+  <menu id="Graphics" label="Gráficos" icon="applications-graphics">
+    <item label="Color Picker for Wayland" icon="wl-color-picker">
+      <action name="Execute"><command>wl-color-picker</command></action>
+    </item>
+    <item label="Gwenview" icon="gwenview">
+      <action name="Execute"><command>gwenview</command></action>
+    </item>
+    <item label="Inkscape" icon="org.inkscape.Inkscape">
+      <action name="Execute"><command>inkscape</command></action>
+    </item>
+    <item label="KColorChooser" icon="kcolorchooser">
+      <action name="Execute"><command>kcolorchooser</command></action>
+    </item>
+    <item label="KolourPaint" icon="kolourpaint">
+      <action name="Execute"><command>kolourpaint</command></action>
+    </item>
+    <item label="Kontrast" icon="org.kde.kontrast">
+      <action name="Execute"><command>kontrast</command></action>
+    </item>
+    <item label="Okular" icon="okular">
+      <action name="Execute"><command>okular</command></action>
+    </item>
+    <item label="Programa de manipulación de imágenes de GNU" icon="gimp">
+      <action name="Execute"><command>gimp-3.0</command></action>
+    </item>
+  </menu> <!-- Graphics -->
+  <menu id="Internet" label="Internet" icon="applications-internet">
+    <item label="ADB Wifi" icon="android-sdk">
+      <action name="Execute"><command>alacritty -e /home/luis/bin/adbwifi.sh</command></action>
+    </item>
+    <item label="Angry IP Scanner" icon="ipscan">
+      <action name="Execute"><command>sh /home/luis/bin/ipscan</command></action>
+    </item>
+    <item label="Configuración de red avanzada" icon="preferences-system-network">
+      <action name="Execute"><command>nm-connection-editor</command></action>
+    </item>
+    <item label="Firefox" icon="firefox">
+      <action name="Execute"><command>/usr/lib/firefox/firefox</command></action>
+    </item>
+    <item label="Google Chrome" icon="com.google.Chrome">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=/app/bin/chrome --file-forwarding com.google.Chrome @@u  @@</command></action>
+    </item>
+    <item label="Indicador de KDE Connect" icon="kdeconnect">
+      <action name="Execute"><command>kdeconnect-indicator</command></action>
+    </item>
+    <item label="KDE Connect" icon="kdeconnect">
+      <action name="Execute"><command>kdeconnect-app</command></action>
+    </item>
+    <item label="Media Downloader" icon="io.github.mhogomchungu.media-downloader">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=io.github.mhogomchungu.media-downloader io.github.mhogomchungu.media-downloader</command></action>
+    </item>
+    <item label="Motrix" icon="net.agalwood.Motrix">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=start-motrix --file-forwarding net.agalwood.Motrix @@u  @@</command></action>
+    </item>
+    <item label="Packet" icon="io.github.nozwock.Packet">
+      <action name="Execute"><command>packet</command></action>
+    </item>
+    <item label="SMS de KDE Connect" icon="kdeconnect">
+      <action name="Execute"><command>kdeconnect-sms</command></action>
+    </item>
+    <item label="Telegram" icon="org.telegram.desktop">
+      <action name="Execute"><command>telegram-desktop --</command></action>
+    </item>
+    <item label="Thunderbird" icon="thunderbird">
+      <action name="Execute"><command>thunderbird</command></action>
+    </item>
+  </menu> <!-- Internet -->
+  <menu id="Multimedia" label="Multimedia" icon="applications-multimedia">
+    <item label="AudioTube" icon="org.kde.audiotube">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=audiotube org.kde.audiotube</command></action>
+    </item>
+    <item label="Cantata" icon="dog.unix.cantata.Cantata">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=cantata dog.unix.cantata.Cantata</command></action>
+    </item>
+    <item label="Control de volumen" icon="multimedia-volume-control">
+      <action name="Execute"><command>pavucontrol</command></action>
+    </item>
+    <item label="Conversor de sonido" icon="org.soundconverter.SoundConverter">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=soundconverter --file-forwarding org.soundconverter.SoundConverter @@u  @@</command></action>
+    </item>
+    <item label="DeaDBeeF" icon="deadbeef">
+      <action name="Execute"><command>/usr/bin/deadbeef</command></action>
+    </item>
+    <item label="Easy Effects" icon="com.github.wwmm.easyeffects">
+      <action name="Execute"><command>easyeffects</command></action>
+    </item>
+    <item label="Flacon" icon="com.github.Flacon">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=flacon --file-forwarding com.github.Flacon @@u  @@</command></action>
+    </item>
+    <item label="fooyin" icon="org.fooyin.fooyin">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=fooyin --file-forwarding org.fooyin.fooyin @@  @@</command></action>
+    </item>
+    <item label="Haruna" icon="haruna">
+      <action name="Execute"><command>haruna</command></action>
+    </item>
+    <item label="mpv Media Player" icon="mpv">
+      <action name="Execute"><command>mpv --player-operation-mode=pseudo-gui --</command></action>
+    </item>
+    <item label="qpwgraph" icon="org.rncbc.qpwgraph">
+      <action name="Execute"><command>qpwgraph</command></action>
+    </item>
+    <item label="Radion" icon="jazzradio">
+      <action name="Execute"><command>/usr/bin/foot /home/luis/bin/radion.sh</command></action>
+    </item>
+    <item label="Spek" icon="spek">
+      <action name="Execute"><command>spek</command></action>
+    </item>
+    <item label="WF Recorder GUI" icon="gtk-recordmydesktop">
+      <action name="Execute"><command>wf-recorder-gui</command></action>
+    </item>
+    <item label="YTMDesktop" icon="app.ytmdesktop.ytmdesktop">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=start-ytmdesktop --file-forwarding app.ytmdesktop.ytmdesktop @@u  @@</command></action>
+    </item>
+  </menu> <!-- Multimedia -->
+  <menu id="Office" label="Oficina" icon="applications-office">
+    <item label="Foliate" icon="com.github.johnfactotum.Foliate">
+      <action name="Execute"><command>foliate</command></action>
+    </item>
+    <item label="ghostwriter" icon="ghostwriter">
+      <action name="Execute"><command>ghostwriter</command></action>
+    </item>
+    <item label="Katvan" icon="app.katvan.Katvan">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=katvan --file-forwarding app.katvan.Katvan @@  @@</command></action>
+    </item>
+    <item label="Okular" icon="okular">
+      <action name="Execute"><command>okular</command></action>
+    </item>
+    <item label="ONLYOFFICE" icon="org.onlyoffice.desktopeditors">
+      <action name="Execute"><command>/usr/bin/flatpak run --branch=stable --arch=x86_64 --command=desktopeditors --file-forwarding org.onlyoffice.desktopeditors @@u  @@</command></action>
+    </item>
+    <item label="Zathura" icon="org.pwmt.zathura">
+      <action name="Execute"><command>zathura</command></action>
+    </item>
+  </menu> <!-- Office -->
+  <menu id="System" label="Sistema" icon="applications-system">
+    <item label="Alacritty" icon="Alacritty">
+      <action name="Execute"><command>alacritty</command></action>
+    </item>
+    <item label="BleachBit" icon="bleachbit">
+      <action name="Execute"><command>bleachbit</command></action>
+    </item>
+    <item label="bottom" icon="htop">
+      <action name="Execute"><command>foot 'btm'</command></action>
+    </item>
+    <item label="btop++" icon="btop">
+      <action name="Execute"><command>foot 'btop'</command></action>
+    </item>
+    <item label="Centro de información" icon="hwinfo">
+      <action name="Execute"><command>kinfocenter</command></action>
+    </item>
+    <item label="Discover" icon="plasmadiscover">
+      <action name="Execute"><command>plasma-discover</command></action>
+    </item>
+    <item label="Dolphin" icon="org.kde.dolphin">
+      <action name="Execute"><command>dolphin</command></action>
+    </item>
+    <item label="Editor del menú" icon="kmenuedit">
+      <action name="Execute"><command>kmenuedit</command></action>
+    </item>
+    <item label="Foot" icon="foot">
+      <action name="Execute"><command>foot</command></action>
+    </item>
+    <item label="Foot Client" icon="foot">
+      <action name="Execute"><command>footclient</command></action>
+    </item>
+    <item label="Foot Server" icon="foot">
+      <action name="Execute"><command>foot --server</command></action>
+    </item>
+    <item label="Gestor de particiones de KDE" icon="partitionmanager">
+      <action name="Execute"><command>partitionmanager</command></action>
+    </item>
+    <item label="Htop" icon="htop">
+      <action name="Execute"><command>foot 'htop'</command></action>
+    </item>
+    <item label="Impresión" icon="io.gitlab.adhami3310.Impression">
+      <action name="Execute"><command>impression</command></action>
+    </item>
+    <item label="ISO Image Writer" icon="org.kde.isoimagewriter">
+      <action name="Execute"><command>isoimagewriter</command></action>
+    </item>
+    <item label="Konsole" icon="utilities-terminal">
+      <action name="Execute"><command>konsole</command></action>
+    </item>
+    <item label="KWalletManager" icon="kwalletmanager">
+      <action name="Execute"><command>kwalletmanager5</command></action>
+    </item>
+    <item label="Labwc Config" icon="labwc-tweaks-gtk">
+      <action name="Execute"><command>labwc-tweaks-gtk</command></action>
+    </item>
+    <item label="Monitor del sistema" icon="utilities-system-monitor">
+      <action name="Execute"><command>plasma-systemmonitor</command></action>
+    </item>
+    <item label="nvtop" icon="nvtop">
+      <action name="Execute"><command>foot 'nvtop'</command></action>
+    </item>
+    <item label="Yazi" icon="yazi">
+      <action name="Execute"><command>foot 'yazi'</command></action>
+    </item>
+  </menu> <!-- System -->
+<separator />
+   <menu id="40" label="LabWC" icon="labwc_tweaks">
+            <menu id="client-list-menu"/>
+            	<item label="Editar Ajustes" icon="theme-config">
+              		<action name="Execute"><command>~/.config/scripts/TofiEdit.sh</command>
+              		</action>
+            	</item>
+            	<item label="Actualizar Menú" icon="theme-config">
+              		<action name="Execute"><command>~/bin/update-lwmenu.sh</command>
+              		</action>
+            	</item>
+	    		<item label="Temas" icon="labwc_tweaks">
+    	  			<action name="Execute"><command>~/.config/scripts/LabwcTheme.sh</command></action>
+    			</item>
+	    		<item label="Tweaks" icon="labwc_tweaks">
+    	  			<action name="Execute"><command>labwc-tweaks</command></action>
+    			</item>
+            	<item label="Aplicar Ajustes" icon="labwc_tweaks"> <action name="Reconfigure"/>
+            	</item>
+     	</menu>
+            <item label="Salir" icon="session-properties">
+              <action name="Execute"><command>wlogout</command>
+              </action>
+            </item>
+</menu> <!-- root-menu -->
+</openbox_menu>

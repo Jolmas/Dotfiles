@@ -1,0 +1,36 @@
+{
+    "label" : "lock",
+    "action" : "~/.config/scripts/LockScreen.sh",
+    "text" : "Bloquear",
+    "keybind" : "l"
+}
+{
+    "label" : "suspend",
+    "action" : "loginctl suspend",
+    "text" : "Suspender",
+    "keybind" : "u"
+}
+{
+    "label" : "reboot",
+    "action" : "loginctl reboot",
+    "text" : "Reiniciar",
+    "keybind" : "r"
+}
+{
+    "label" : "hibernate",
+    "action" : "loginctl hibernate",
+    "text" : "Hibernar",
+    "keybind" : "h"
+}
+{
+    "label" : "logout",
+    "action" : "labwc --exit",
+    "text" : "Salir",
+    "keybind" : "e"
+}
+{
+    "label" : "shutdown",
+    "action" : "loginctl poweroff",
+    "text" : "Apagar",
+    "keybind" : "s"
+}
