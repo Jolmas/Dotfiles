@@ -5,7 +5,7 @@ THEMES=(~/.config/waybar/style)
 WAYBAR="$HOME/.config/scripts/Waybar.sh"
 
 # Opciones del menú     
-opciones=("byw" "clear" "dark-breeze" "dark-cat" "dark-tokyo" "dark" "default_alter" "dracula" "evergreen" "light" "mauve-light" "mauve" "moccha" "nord" "rgb" "simple")
+opciones=("byw" "clear" "dark-breeze" "dark-cat" "dark-tokyo" "dark" "default_alter" "dracula" "evergreen" "light" "mauve-light" "mauve" "moccha" "nord" "rgb" "sequoia" "simple")
 
 # Función para ejecutar un comando mpc
 ejecutar_comando() {
@@ -82,6 +82,10 @@ case $opcion_seleccionada in
         ;;
     "rgb")
         ejecutar_comando rgb
+        restart
+        ;;
+    "sequoia")
+        ejecutar_comando sequoia
         restart
         ;;
     "simple")

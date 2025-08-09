@@ -50,6 +50,9 @@ menu(){
   printf "30. Aqua-7\n"
   printf "31. Aqua-Pills\n"
   printf "32. Aqua-Dots\n"
+  printf "33. Aqua-Dark\n"
+  printf "34. Aquadrop\n"
+  printf "35. Aqua-Gradient\n"
 
 }
 
@@ -244,15 +247,33 @@ main() {
 			restart
             ;;
         31)
-	        ln -sf $THEMES/style-light.css "$HOME/.config/waybar/style.css"
-    	    ln -sf $THEMES/style-light.css "$HOME/.config/waybar/style-default.css"
+	        ln -sf $THEMES/style-sequoia.css "$HOME/.config/waybar/style.css"
+    	    ln -sf $THEMES/style-sequoia.css "$HOME/.config/waybar/style-default.css"
 			sed -i '' "s/$(grep "<theme>" ~/.config/labwc/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/Lab-Aqua-Pills/g" ~/.config/labwc/rc.xml
 			restart
             ;;
         32)
-	        ln -sf $THEMES/style-light.css "$HOME/.config/waybar/style.css"
-    	    ln -sf $THEMES/style-light.css "$HOME/.config/waybar/style-default.css"
+	        ln -sf $THEMES/style-sequoia.css "$HOME/.config/waybar/style.css"
+    	    ln -sf $THEMES/style-sequoia.css "$HOME/.config/waybar/style-default.css"
 			sed -i '' "s/$(grep "<theme>" ~/.config/labwc/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/Lab-Aqua-Dots/g" ~/.config/labwc/rc.xml
+			restart
+            ;;
+        33)
+	        ln -sf $THEMES/style-dark-breeze.css "$HOME/.config/waybar/style.css"
+    	    ln -sf $THEMES/style-dark-breeze.css "$HOME/.config/waybar/style-default.css"
+			sed -i '' "s/$(grep "<theme>" ~/.config/labwc/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/Lab-Aqua-Dark/g" ~/.config/labwc/rc.xml
+			restart
+            ;;
+        34)
+	        ln -sf $THEMES/style-sequoia.css "$HOME/.config/waybar/style.css"
+    	    ln -sf $THEMES/style-sequoia.css "$HOME/.config/waybar/style-default.css"
+			sed -i '' "s/$(grep "<theme>" ~/.config/labwc/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/Lab-Aquadrop/g" ~/.config/labwc/rc.xml
+			restart
+            ;;
+        35)
+	        ln -sf $THEMES/style-sequoia.css "$HOME/.config/waybar/style.css"
+    	    ln -sf $THEMES/style-sequoia.css "$HOME/.config/waybar/style-default.css"
+			sed -i '' "s/$(grep "<theme>" ~/.config/labwc/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/Lab-Aqua-Gradient/g" ~/.config/labwc/rc.xml
 			restart
             ;;
         *)

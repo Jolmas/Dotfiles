@@ -295,7 +295,7 @@
 
 "custom/clipboard":{
   "format": "📋 {}",
-  "on-click": "copyq toggle",
+  "on-click": "clapboard",
   "tooltip": true,
   "tooltip-format": "Portapapeles",
 },
