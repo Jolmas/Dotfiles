@@ -1,5 +1,5 @@
 {
-"include": "~/.config/waybar/modules",
+"include": "~/.config/waybar/modules-2",
 "layer": "top",
 "mode": "dock",
 "exclusive": true,
