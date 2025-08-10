@@ -310,6 +310,30 @@
   "tooltip" : true,
 },
 
+"niri/workspaces": {
+	"format": "{icon}",
+	"all-outputs": true,
+	"format-icons": {
+		"1": "",
+		"2": "",
+		"3": "",
+		"default": "",
+		"focused": ""
+	}
+},
+
+"wlr/workspaces": {
+	"format": "{icon}",
+	"on-click": "activate",
+	"all-outputs": true,
+	"format-icons": {
+		"1": "",
+		"2": "",
+		"3": "",
+		"default": ""
+	}
+},
+
 "custom/ws1": {
 	"format": "1 {}",
 	"tooltip": true,
