@@ -1,0 +1,6 @@
+#!/bin/bash
+
+STYLE="style-2.rasi"
+CONFIG="$HOME/.config/powermenu/style"
+CFG="$HOME/.config/powermenu"
+cp $CONFIG/$STYLE $CFG/style-default.rasi
