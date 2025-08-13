@@ -53,6 +53,7 @@ menu(){
   printf "33. Aqua-Dark\n"
   printf "34. Aquadrop\n"
   printf "35. Aqua-Gradient\n"
+  printf "36. MacOS-Leopard\n"
 
 }
 
@@ -274,6 +275,12 @@ main() {
 	        ln -sf $THEMES/style-sequoia.css "$HOME/.config/waybar/style.css"
     	    ln -sf $THEMES/style-sequoia.css "$HOME/.config/waybar/style-default.css"
 			sed -i '' "s/$(grep "<theme>" ~/.config/labwc/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/Lab-Aqua-Gradient/g" ~/.config/labwc/rc.xml
+			restart
+            ;;
+        36)
+	        ln -sf $THEMES/style-sequoia.css "$HOME/.config/waybar/style.css"
+    	    ln -sf $THEMES/style-sequoia.css "$HOME/.config/waybar/style-default.css"
+			sed -i '' "s/$(grep "<theme>" ~/.config/labwc/rc.xml -A 5 | grep "<name>"| awk -F"[><]" '{print $3}')/Lab-MacOS-Leopard/g" ~/.config/labwc/rc.xml
 			restart
             ;;
         *)

@@ -4,8 +4,8 @@
     <item label="Terminal" icon="konsole">
       <action name="Execute"><command>foot</command></action>
     </item>
-	<item label="Dolphin" icon="org.kde.dolphin">
-      <action name="Execute"><command>dolphin</command></action>
+	<item label="Archivos" icon="org.kde.dolphin">
+      <action name="Execute"><command>thunar</command></action>
     </item>
   <separator />
   <menu id="Accessories" label="Accesorios" icon="applications-accessories">
@@ -130,7 +130,7 @@
     </item>
   </menu> <!-- Graphics -->
   <menu id="Internet" label="Internet" icon="applications-internet">
-    <item label="ADB Wifi" icon="android-sdk">
+    <item label="ADB Wifi" icon="kdeconnect">
       <action name="Execute"><command>alacritty -e /home/luis/bin/adbwifi.sh</command></action>
     </item>
     <item label="Angry IP Scanner" icon="ipscan">
@@ -204,7 +204,7 @@
     <item label="qpwgraph" icon="org.rncbc.qpwgraph">
       <action name="Execute"><command>qpwgraph</command></action>
     </item>
-    <item label="Radion" icon="jazzradio">
+    <item label="Radion" icon="gnome-music">
       <action name="Execute"><command>/usr/bin/foot /home/luis/bin/radion.sh</command></action>
     </item>
     <item label="Spek" icon="spek">
@@ -303,23 +303,24 @@
     </item>
   </menu> <!-- System -->
 <separator />
-   <menu id="40" label="LabWC" icon="labwc_tweaks">
+   <menu id="40" label="LabWC" icon="labwc-tweaks-gtk">
             <menu id="client-list-menu"/>
-            	<item label="Editar Ajustes" icon="theme-config">
-              		<action name="Execute"><command>~/.config/scripts/TofiEdit.sh</command>
+            	<item label="Editar Ajustes" icon="systemsettings">
+              		<action name="Execute"><command>~/.config/scripts/WkrEdit.sh</command>
               		</action>
             	</item>
-            	<item label="Actualizar Menú" icon="theme-config">
-              		<action name="Execute"><command>~/bin/update-lwmenu.sh</command>
+            	<item label="Actualizar Menú" icon="systemsettings">
+              		<action name="Execute"><command>~/.config/scripts/update-lwmenu.sh</command>
               		</action>
             	</item>
-	    		<item label="Temas" icon="labwc_tweaks">
+	    		<item label="Temas" icon="labwc-tweaks-gtk">
     	  			<action name="Execute"><command>~/.config/scripts/LabwcTheme.sh</command></action>
     			</item>
-	    		<item label="Tweaks" icon="labwc_tweaks">
-    	  			<action name="Execute"><command>labwc-tweaks</command></action>
+	    		<item label="Tweaks" icon="labwc-tweaks-gtk">
+    	  			<action name="Execute"><command>labwc-tweaks-gtk</command></action>
     			</item>
-            	<item label="Aplicar Ajustes" icon="labwc_tweaks"> <action name="Reconfigure"/>
+            	<item label="Aplicar Ajustes" icon="labwc-tweaks-gtk"> 
+    	  			<action name="Execute"><command>~/.config/scripts/reload.sh</command></action>
             	</item>
      	</menu>
             <item label="Salir" icon="session-properties">

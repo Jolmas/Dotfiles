@@ -8,13 +8,14 @@ wlsunset -l 9.07 -L -69.81 -T 5700 -t 5000 -g 0.8 >/dev/null 2>&1 & # latitude a
 #dunst &
 
 # Automount disks
-#udiskie -at &
+# udiskie -at &
 
 #Music Player Daemon
 mpd &
 
 /usr/lib/polkit-kde-authentication-agent-1 &
-easyeffects --gapplication-service &
+#easyeffects --gapplication-service &
+walker --gapplication-service &
 
 # Configure output directives such as mode, position, scale and transform.
 # Use wlr-randr to get your output names
@@ -24,8 +25,8 @@ easyeffects --gapplication-service &
 #     output eDP-1 position 0,0
 #   }
 kanshi >/dev/null 2>&1 &
-gsettings set org.gnome.desktop.interface gtk-theme "Breeze-Dark" &
-gsettings set org.gnome.desktop.interface icon-theme "Papirus-Dark" &
+gsettings set org.gnome.desktop.interface gtk-theme "Breeze" &
+gsettings set org.gnome.desktop.interface icon-theme "WhiteSur-light" &
 gsettings set org.gnome.desktop.desktop.wm.preferences button-layout "menu:minimize,maximize,close" &
 
 # Launch a panel such as yambar or waybar.

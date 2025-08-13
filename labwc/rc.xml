@@ -19,8 +19,8 @@
     <screenEdgeStrength>10</screenEdgeStrength>
   </resistance>
   <theme>
-    <name>Lab-Chimera-Night</name>
-    <icon>Papirus-Dark</icon>
+    <name>Lab-MacOS-Leopard</name>
+    <icon>WhiteSur-light</icon>
     <cornerRadius>8</cornerRadius>
     <font name="Noto Sans" size="11"/>
     <keppBorder>yes</keppBorder>
@@ -96,7 +96,7 @@
       <action name="Execute" command="deadbeef"/>
     </keybind>
     <keybind key="W-p">
-      <action name="Execute" command="spectacle"/>
+      <action name="Execute" command="copyq toggle"/>
     </keybind>
     <keybind key="W-r">
       <action name="Execute" command="rofi -show run -prompt Ejecutar -config ~/.config/rofi/themes/runbox/config.rasi -theme ~/.config/rofi/themes/runbox/runbox-dark.rasi "/>
@@ -194,7 +194,7 @@
       <action name="Close"/>
     </keybind>
     <keybind key="A-F5">
-      <action name="Execute" command="tofi-drun"/>
+      <action name="Execute" command="/usr/local/bin/walker"/>
     </keybind>
     <!-- Resize active window -->
     <keybind key="W-S-r">
