@@ -19,7 +19,7 @@
     <screenEdgeStrength>10</screenEdgeStrength>
   </resistance>
   <theme>
-    <name>Lab-MacOS-Leopard</name>
+    <name>Lab-MacOS-Lion</name>
     <icon>WhiteSur-light</icon>
     <cornerRadius>8</cornerRadius>
     <font name="Noto Sans" size="11"/>

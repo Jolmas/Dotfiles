@@ -4,7 +4,7 @@
 NUMBER=5
 SYMBOL_CURRENT=""
 SYMBOL_OTHER=""
-PIPE=/home/luis/.cache/workspace
+PIPE=$HOME/.cache/workspace
 WRAP=true
 # </config>
 

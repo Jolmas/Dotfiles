@@ -8,10 +8,12 @@ THUMBNAIL_DIR="$HOME/.cache/wallpaper-thumbs"
 THUMBNAIL_SIZE="200x200"
 GRID_ROWS=2
 GRID_COLS=6
+AZOTEBG="$HOME/.azotebg"
+AZOTEMP="$HOME/.cache/temp_file"
 
 # Ensure dependencies are installed
 command -v convert >/dev/null || { notify-send "ImageMagick 'convert' is not installed."; exit 1; }
-command -v wbg >/dev/null || { notify-send "wbg is not installed."; exit 1; }
+command -v swaybg >/dev/null || { notify-send "swaybg is not installed."; exit 1; }
 
 # Create directories if they don't exist
 mkdir -p "$THUMBNAIL_DIR"
@@ -106,10 +108,14 @@ if [[ -f "$selected_wallpaper" ]]; then
 
  
     # Apply wallpaper with optimized transitions
-	pkill wbg
+	pkill swaybg
 	sleep 0.5
-    wbg -s "$selected_wallpaper" &
-
+    swaybg -o 'VGA-1' -i "$selected_wallpaper" -m fill &
+	sleep 0.5
+    head -n 2 $AZOTEBG > $AZOTEMP
+    cp $AZOTEMP $AZOTEBG
+	echo "wbg -s "$selected_wallpaper" &" >> $AZOTEBG
+	
     # Lightweight notification
     notify-send -t 3000 "Wallpaper" "$(basename "$selected_wallpaper")"
 

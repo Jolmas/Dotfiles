@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# WALLPAPERS PATH
+# PATH
 DIR=$HOME/Imágenes/Wallpapers
+AZOTEBG="$HOME/.azotebg"
+AZOTEMP="$HOME/.cache/temp_file"
 
 # wofi window config (in %)
 WIDTH=25
@@ -59,6 +61,10 @@ main() {
 	fi
 
     wbg -s ${DIR}/${PICS[$pic_index]} &
+	sleep 0.5
+    head -n 2 $AZOTEBG > $AZOTEMP
+    cp $AZOTEMP $AZOTEBG
+	echo "wbg -s "${DIR}/${PICS[$pic_index]}" &" >> $AZOTEBG
 }
 
 # Check if wofi is already running

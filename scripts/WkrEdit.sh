@@ -1,10 +1,10 @@
 #!/bin/bash
 
-labDir="/home/luis/.config/labwc"
-waybarDir="/home/luis/.config/waybar"
+labDir="$HOME/.config/labwc"
+waybarDir="$HOME/.config/waybar"
 
 items="Configure Labwc\nConfigure Waybar\nConfigure Autostart"
-cmd=$(echo -e $items | walker --dmenu -H)
+cmd=$(echo -e $items | walker --dmenu)
 
 if [[ "$cmd" == "Configure Labwc" ]]; then
 	foot micro "$labDir/rc.xml"

@@ -5,7 +5,7 @@
       <action name="Execute"><command>foot</command></action>
     </item>
 	<item label="Archivos" icon="org.kde.dolphin">
-      <action name="Execute"><command>thunar</command></action>
+      <action name="Execute"><command>dolphin</command></action>
     </item>
   <separator />
   <menu id="Accessories" label="Accesorios" icon="applications-accessories">
@@ -14,9 +14,6 @@
     </item>
     <item label="BleachBit" icon="bleachbit">
       <action name="Execute"><command>bleachbit</command></action>
-    </item>
-    <item label="bottom" icon="htop">
-      <action name="Execute"><command>foot 'btm'</command></action>
     </item>
     <item label="CopyQ" icon="copyq">
       <action name="Execute"><command>copyq --start-server show</command></action>
@@ -74,11 +71,29 @@
     <item label="Ajustes de KDE Connect" icon="kdeconnect">
       <action name="Execute"><command>kdeconnect-settings</command></action>
     </item>
+    <item label="Asociaciones de archivo" icon="preferences-desktop-filetype-association">
+      <action name="Execute"><command>lxqt-config-file-associations</command></action>
+    </item>
+    <item label="Aspecto" icon="preferences-desktop-theme">
+      <action name="Execute"><command>lxqt-config-appearance</command></action>
+    </item>
+    <item label="Brillo" icon="brightnesssettings">
+      <action name="Execute"><command>lxqt-config-brightness</command></action>
+    </item>
+    <item label="Centro de configuración de LXQt" icon="preferences-system">
+      <action name="Execute"><command>lxqt-config</command></action>
+    </item>
     <item label="Configuración de red avanzada" icon="preferences-system-network">
       <action name="Execute"><command>nm-connection-editor</command></action>
     </item>
+    <item label="Configuración regional" icon="preferences-desktop-locale">
+      <action name="Execute"><command>lxqt-config-locale</command></action>
+    </item>
     <item label="Control de volumen" icon="multimedia-volume-control">
       <action name="Execute"><command>pavucontrol</command></action>
+    </item>
+    <item label="GTK Settings" icon="nwg-look">
+      <action name="Execute"><command>nwg-look</command></action>
     </item>
     <item label="Labwc Config" icon="labwc-tweaks-gtk">
       <action name="Execute"><command>labwc-tweaks-gtk</command></action>
@@ -86,11 +101,17 @@
     <item label="Labwc Tweaks" icon="labwc_tweaks">
       <action name="Execute"><command>labwc-tweaks</command></action>
     </item>
+    <item label="Monitor" icon="preferences-desktop-display">
+      <action name="Execute"><command>lxqt-config-monitor</command></action>
+    </item>
     <item label="Preferencias del sistema" icon="preferences-system">
       <action name="Execute"><command>systemsettings</command></action>
     </item>
     <item label="Preferencias del sistema de KDE" icon="preferences-system">
       <action name="Execute"><command>systemsettings</command></action>
+    </item>
+    <item label="Teclado y ratón" icon="preferences-desktop-peripherals">
+      <action name="Execute"><command>lxqt-config-input</command></action>
     </item>
   </menu> <!-- Settings -->
   <menu id="Development" label="Desarrollo" icon="applications-development">
@@ -244,7 +265,7 @@
     <item label="BleachBit" icon="bleachbit">
       <action name="Execute"><command>bleachbit</command></action>
     </item>
-    <item label="bottom" icon="htop">
+    <item label="bottom">
       <action name="Execute"><command>foot 'btm'</command></action>
     </item>
     <item label="btop++" icon="btop">

@@ -2,10 +2,8 @@
 
 # Set background and nightshift
 #/home/luis/.config/scripts/WallPaperTime.sh &
-wbg -s /home/luis/Imágenes/Wallpapers/macOS_Tahoe_DefaultDark.png &
+/home/luis/.azotebg &
 wlsunset -l 9.07 -L -69.81 -T 5700 -t 5000 -g 0.8 >/dev/null 2>&1 & # latitude and Longitude
-#Notifications
-#dunst &
 
 # Automount disks
 # udiskie -at &

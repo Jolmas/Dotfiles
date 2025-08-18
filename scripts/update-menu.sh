@@ -46,7 +46,7 @@ printf '%b\n' '<?xml version="1.0" encoding="UTF-8"?>
       <action name="Execute"><command>foot</command></action>
     </item>
 	<item label="Archivos" icon="org.kde.dolphin">
-      <action name="Execute"><command>thunar</command></action>
+      <action name="Execute"><command>dolphin</command></action>
     </item>
   <separator />'
 
