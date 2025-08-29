@@ -12,11 +12,11 @@ margin-bottom: 1px;
 }
 
 window#waybar {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(245, 245, 245, 0.4);
     border-radius: 8px;
     color: #262626;
     border-style: solid;
-    border-width: 0px;
+    border-width: 1px;
     border-color: #8fd1eb;
 }
 
@@ -46,54 +46,42 @@ tooltip label {
 }
 
 #workspaces button {
-    padding: 0px;
+    padding: 2px;
     background: transparent;
     color: black;
     margin-right: 2px;
-    margin-top: 1px;
-	margin-bottom: 1px;
 }
    
 #workspaces button.active {
     color: #14adff;
     border-radius: 4px;
-    padding: 0px 0px;
-    margin: 0px;
+    padding: 1px 1px;
+    margin: 1px;
     margin-right: 2px;
     margin-left: 1px;
-    margin-top: 0px;
-	margin-bottom: 0px;
 }
   
 #workspaces button.focused {
     color: #64727d;
 	padding: 0px 0px;
-    margin: 0px;
-    margin-top: 1px;
-	margin-bottom: 1px;
+    margin: 1 0 0 1;
 }
 
 #taskbar button.active {
     background-color: #14adff;
     padding: 0px 0px;
-    margin: 0px;
+    margin: 1 0 0 1;
     margin-right: 0px;
-	margin-top: 1px;
-	margin-bottom: 1px;
 }
-
+   
 #workspaces button.urgent {
     color: #11111b;
     border-radius: 4px;
-	margin-top: 1px;
-	margin-bottom: 1px;
 }
        
 #workspaces button:hover {
     color: #57b5f3;
     border-radius: 4px;
-	margin-top: 1px;
-	margin-bottom: 1px;
 }
    
 #clock,
@@ -140,11 +128,9 @@ tooltip label {
 #custom-weather.default 
 #idle_inhibitor {
     border-radius: 6px;
-    padding: 1px 0px;
-    margin: 0px;
+    padding: 1px 1px;
+    margin: 0 0 0 0;
     color:#262626;
-	margin-top: 0px;
-	margin-bottom: 0px;
 }
      
 #temperature.critical {

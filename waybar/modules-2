@@ -81,7 +81,7 @@
   "tooltip-format": "<tt><small>{calendar}</small></tt>",
   "calendar": {
     "mode"          : "year",
-    "mode-mon-col"  : 3,
+    "mode-mon-col"  : 2,
     "weeks-pos"     : "right",
     "on-scroll"     : 1,
     "format": {
@@ -90,15 +90,15 @@
     "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
     "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
     "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
-    }
-  }
+              }
+              }
 },
 
 "cpu": {
   "format": "{usage}% 󰒇",
   "interval": 1,
   "format-alt-click": "click",
-  "format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰒇",
+  "format-alt": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% ",
   "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
   "on-click-right": "foot htop",
 },
@@ -268,21 +268,22 @@
 "custom/power": {
   "format": "",
   "tooltip": false,
+  "tooltip-format": "1🖯: Salir",
   //"on-click": "sh -c '(sleep 0.5s; wlogout --protocol layer-shell)' & disown",
-  "on-click": "~/.config/powermenu/powerniri.sh",
+  "on-click": "/usr/bin/wlogout",
   //"on-click-right": "~/.config/scripts/ChangeBlur.sh",
 },
 
 "custom/updater":{
   "format": "  {}",
-  "on-click": "foot ~/bin/chupdate",
+  "on-click": "foot ~/.config/scripts/xupdate",
   "tooltip": true,
   "tooltip-format": "Actualizar Sistema",
 },
 
 "custom/clipboard":{
   "format": " {}",
-  "on-click": "clapboard",
+  "on-click": "copyq toggle",
   "tooltip": true,
   "tooltip-format": "Portapapeles",
 },
@@ -321,33 +322,38 @@
 	}
 },
 
-"custom/ws1": {
-	"format": "1 {}",
-	"tooltip": true,
-	"tooltip-format": "Escritorio 1",
-	"on-click": "wtype -M ctrl -M alt -k Left -m ctrl -m alt 2> /dev/null"
-	},
-
-"custom/ws2": {
-	"format": "2 {}",
-	"tooltip": true,
-	"tooltip-format": "Escritorio 2",
-	"on-click": "wtype -M ctrl -M alt -k Right -m ctrl -m alt 2> /dev/null"
-	},
-
-"custom/ws3": {
-	"format": "3 {}",
-	"tooltip": true,
-	"tooltip-format": "Escritorio 3",
-	"on-click": "wtype -M ctrl -M alt -k Up -m ctrl -m alt 2> /dev/null"
-	},
-
-"custom/ws4": {
-	"format": "4 {}",
-	"tooltip": true,
-	"tooltip-format": "Escritorio 4",
-	"on-click": "wtype -M ctrl -M alt -k Down -m ctrl -m alt 2> /dev/null"
-	},
+"custom/wsactive1": {
+    "format": "{} ",
+    "interval": 10,
+    "exec": "~/.config/scripts/wsactive1.sh",
+    "on-click": "wtype -M ctrl -M alt -k Left -m ctrl -m alt 2> /dev/null",
+    "tooltip": true,
+    "tooltip-format": "Escritorio 1",
+},
+"custom/wsactive2": {
+    "format": "{} ",
+    "interval": 10,
+    "exec": "~/.config/scripts/wsactive2.sh",
+    "on-click": "wtype -M ctrl -M alt -k Right -m ctrl -m alt 2> /dev/null",
+    "tooltip": true,
+    "tooltip-format": "Escritorio 2",
+},
+"custom/wsactive3": {
+    "format": "{} ",
+    "interval": 10,
+    "exec": "~/.config/scripts/wsactive3.sh",
+    "on-click": "wtype -M ctrl -M alt -k Up -m ctrl -m alt 2> /dev/null",
+    "tooltip": true,
+    "tooltip-format": "Escritorio 3",
+},
+"custom/wsactive4": {
+    "format": "{} ",
+    "interval": 10,
+    "exec": "~/.config/scripts/wsactive4.sh",
+    "on-click": "wtype -M ctrl -M alt -k Down -m ctrl -m alt 2> /dev/null",
+    "tooltip": true,
+    "tooltip-format": "Escritorio 4",
+},
 
 "sway/workspaces": {
 	"disable-scroll": true,

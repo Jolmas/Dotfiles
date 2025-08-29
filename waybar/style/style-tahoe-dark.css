@@ -12,12 +12,12 @@ margin-bottom: 1px;
 }
 
 window#waybar {
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 8px;
+    background: rgba(142, 145, 144, 0.4);
+    border-radius: 10px;
     color: #262626;
     border-style: solid;
-    border-width: 0px;
-    border-color: #8fd1eb;
+    border-width: 1px;
+    border-color: #6e7170;
 }
 
 window#waybar.hidden {
@@ -25,15 +25,15 @@ window#waybar.hidden {
 }
    
 tooltip {
-    background: #f6f9fa;
+    background: #8e9190;
 	border-radius: 8px;
     border-width: 1px;
     border-style: solid;
-    border-color: #8fd1eb;
+    border-color: #8e9190;
 }
 
 tooltip label {
-	color: #262626;
+	color: #f3f3f3;
 }
 
 /*-----module groups----*/
@@ -46,54 +46,29 @@ tooltip label {
 }
 
 #workspaces button {
-    padding: 0px;
+    padding: 2px;
     background: transparent;
     color: black;
-    margin-right: 2px;
-    margin-top: 1px;
-	margin-bottom: 1px;
+    margin-right: 5px;
 }
    
 #workspaces button.active {
     color: #14adff;
-    border-radius: 4px;
-    padding: 0px 0px;
-    margin: 0px;
-    margin-right: 2px;
-    margin-left: 1px;
-    margin-top: 0px;
-	margin-bottom: 0px;
+    border-radius: 15px 15px 15px 15px;
 }
   
 #workspaces button.focused {
     color: #64727d;
-	padding: 0px 0px;
-    margin: 0px;
-    margin-top: 1px;
-	margin-bottom: 1px;
 }
-
-#taskbar button.active {
-    background-color: #14adff;
-    padding: 0px 0px;
-    margin: 0px;
-    margin-right: 0px;
-	margin-top: 1px;
-	margin-bottom: 1px;
-}
-
+   
 #workspaces button.urgent {
     color: #11111b;
-    border-radius: 4px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+    border-radius: 10px;
 }
        
 #workspaces button:hover {
-    color: #57b5f3;
-    border-radius: 4px;
-	margin-top: 1px;
-	margin-bottom: 1px;
+    color: #14adff;
+    border-radius: 8px;
 }
    
 #clock,
@@ -121,6 +96,10 @@ tooltip label {
 #workspaces,
 #custom-light_dark,
 #custom-updater,
+#custom-ws1,
+#custom-ws2,
+#custom-ws3,
+#custom-ws4,
 #custom-menu,
 #custom-cycle_wall,
 #custom-power,
@@ -137,14 +116,13 @@ tooltip label {
 #custom-weather.rainyNight,
 #custom-weather.showyIcyDay,
 #custom-weather.snowyIcyNight,
-#custom-weather.default 
+#custom-weather.default
+#custom-workspaces,
 #idle_inhibitor {
     border-radius: 6px;
-    padding: 1px 0px;
-    margin: 0px;
-    color:#262626;
-	margin-top: 0px;
-	margin-bottom: 0px;
+    padding: 1px 2px;
+    margin: 0px 1px;
+    color:#fefefe;
 }
      
 #temperature.critical {
@@ -157,6 +135,10 @@ tooltip label {
        }
 }
    
+#taskbar button.active {
+    background-color: #14adff;
+}
+       
 #battery.critical:not(.charging) {
     color: #f53c3c;
     animation-name: blink;
@@ -165,4 +147,4 @@ tooltip label {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
-   
+
