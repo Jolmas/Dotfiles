@@ -3,10 +3,10 @@
 # Configuration
 WALLPAPER_DIR="$HOME/Imágenes/Wallpapers"
 CACHE_FILE="$HOME/.cache/wallpaper_index.txt"
-ROFI_CONFIG="$HOME/.config/rofi/themes/fullscreen-preview.rasi"
+ROFI_CONFIG="$HOME/.config/rofi/config-wallpaper.rasi"
 THUMBNAIL_DIR="$HOME/.cache/wallpaper-thumbs"
 THUMBNAIL_SIZE="350x200"
-GRID_ROWS=5
+GRID_ROWS=4
 GRID_COLS=6
 AZOTEBG="$HOME/.azotebg"
 AZOTEMP="$HOME/.cache/temp_file"
@@ -110,7 +110,7 @@ if [[ -f "$selected_wallpaper" ]]; then
     # Apply wallpaper with optimized transitions
 	pkill wbg
 	sleep 0.5
-    wbg -s "$selected_wallpaper" &
+    wbg -o 'VGA-1' -i "$selected_wallpaper" -m fill &
 	sleep 0.5
     head -n 2 $AZOTEBG > $AZOTEMP
     cp $AZOTEMP $AZOTEBG
